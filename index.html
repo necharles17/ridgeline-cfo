@@ -16,9 +16,13 @@
     <nav class="fixed top-0 inset-x-0 z-50 bg-paper/90 backdrop-blur-sm border-b border-charcoal/5">
       <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" class="font-serif text-xl font-semibold text-charcoal tracking-tight">Ridgeline CFO</a>
-        <a href="#contact" class="hidden sm:inline-block text-sm font-medium border border-charcoal/20 rounded-full px-5 py-2 hover:bg-charcoal hover:text-paper transition-colors">
-          Book Intro Call
-        </a>
+        <div class="hidden sm:flex items-center gap-7">
+          <a href="#services" class="text-sm font-medium text-charcoal/70 hover:text-charcoal transition-colors">Services</a>
+          <a href="#about" class="text-sm font-medium text-charcoal/70 hover:text-charcoal transition-colors">About</a>
+          <a href="#contact" class="text-sm font-medium bg-forest text-paper rounded-full px-5 py-2 hover:bg-forest/90 transition-colors">
+            Let's Talk
+          </a>
+        </div>
         <button id="menu-btn" class="sm:hidden p-2 -mr-2" aria-expanded="false" aria-label="Toggle menu">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -26,137 +30,299 @@
         </button>
       </div>
       <div id="mobile-menu" class="hidden sm:hidden border-t border-charcoal/5 bg-paper px-6 pb-4">
-        <a href="#services" class="block py-2 text-sm text-slate hover:text-charcoal">Services</a>
-        <a href="#about" class="block py-2 text-sm text-slate hover:text-charcoal">About</a>
-        <a href="#faq" class="block py-2 text-sm text-slate hover:text-charcoal">FAQ</a>
-        <a href="#contact" class="block py-2 text-sm font-medium text-forest">Book Intro Call</a>
+        <a href="#services" class="block py-3 font-medium text-charcoal/70 hover:text-charcoal">Services</a>
+        <a href="#about" class="block py-3 font-medium text-charcoal/70 hover:text-charcoal">About</a>
+        <a href="#faq" class="block py-3 font-medium text-charcoal/70 hover:text-charcoal">FAQ</a>
+        <a href="#contact" class="block py-3 font-medium text-forest">Let's Talk</a>
       </div>
     </nav>
 
     <!-- Hero -->
     <section class="relative pt-32 pb-20 sm:pt-40 sm:pb-28 overflow-hidden">
-      <img src="/ridge-line.svg" alt="" class="absolute bottom-0 left-0 w-full h-24 sm:h-32 object-cover pointer-events-none select-none" aria-hidden="true" />
+      <img
+        src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80"
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none select-none"
+        aria-hidden="true"
+      />
+
       <div class="max-w-5xl mx-auto px-6 relative">
         <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight tracking-tight max-w-2xl">
-          Financial clarity for what comes next.
-        </h1>
-        <p class="mt-5 text-lg sm:text-xl text-slate max-w-lg">
           Your strategic CFO partner so you can keep building.
+        </h1>
+        <p class="mt-5 text-xl sm:text-2xl text-slate max-w-xl">
+          Fractional CFO services providing the strategic layer you need for total clarity, sustainable growth, and maximized profits.
         </p>
-        <a href="#contact" class="inline-block mt-8 bg-forest text-paper text-sm font-medium rounded-full px-7 py-3 hover:bg-forest/90 transition-colors">
+        <a href="#contact" class="inline-block mt-8 bg-forest text-paper font-medium rounded-full px-8 py-3.5 hover:bg-forest/90 transition-colors">
           Book an Intro Call
         </a>
       </div>
     </section>
 
+    <!-- What We Do -->
+    <section class="py-20 sm:py-28 bg-white">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="font-serif text-3xl sm:text-4xl font-semibold tracking-tight max-w-2xl">The strategic layer between your books and your vision.</h2>
+        <p class="mt-5 text-lg text-slate max-w-2xl leading-relaxed">
+          We provide the forward-looking oversight growth-stage builders need to turn historical data into a strategic roadmap.
+        </p>
+        <div class="mt-14 grid gap-6 sm:grid-cols-2">
+          <div class="flex gap-5 items-start bg-paper rounded-xl p-7">
+            <span class="mt-0.5 text-forest shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" /></svg>
+            </span>
+            <div>
+              <p class="font-semibold text-charcoal">Financial Performance Management</p>
+              <p class="mt-1 text-slate">Our monthly and quarterly reporting cadence. We hold monthly or bimonthly strategy calls to review your performance, keep you accountable, and adjust the plan in real-time.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-start bg-paper rounded-xl p-7">
+            <span class="mt-0.5 text-forest shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg>
+            </span>
+            <div>
+              <p class="font-semibold text-charcoal">Cash Visibility</p>
+              <p class="mt-1 text-slate">13-Week Cash Modeling. Gain total certainty over your liquidity with weekly cash flow models. Fund growth and manage hiring without guessing about your cash position.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-start bg-paper rounded-xl p-7">
+            <span class="mt-0.5 text-forest shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" /></svg>
+            </span>
+            <div>
+              <p class="font-semibold text-charcoal">Strategic Planning &amp; Goal Setting</p>
+              <p class="mt-1 text-slate">12-Month Rolling Forecasts. We replace static budgets with dynamic roadmaps that evolve as you scale, giving you a clear view of where your business is headed.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-start bg-paper rounded-xl p-7">
+            <span class="mt-0.5 text-forest shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" /></svg>
+            </span>
+            <div>
+              <p class="font-semibold text-charcoal">Actionable Insights</p>
+              <p class="mt-1 text-slate">Visual Performance Dashboards. We translate complex books into clear, visual KPI tracking so you can stay focused on the specific metrics that actually drive your revenue and profit.</p>
+            </div>
+          </div>
+        </div>
+        <p class="mt-12 text-sm text-slate/70 text-center">Ridgeline CFO provides strategic FP&amp;A and CFO leadership. We work with your existing accounting, bookkeeping, and tax services. If you do not use these services, we have a network of expert referrals.</p>
+      </div>
+    </section>
+
+    <!-- What is a Fractional CFO -->
+    <section class="py-16 sm:py-20 bg-forest-light">
+      <div class="max-w-5xl mx-auto px-6 sm:flex sm:gap-16 sm:items-center">
+        <div class="sm:w-1/2">
+          <h2 class="font-serif text-3xl sm:text-4xl font-semibold tracking-tight">Why a fractional CFO?</h2>
+          <p class="mt-5 text-lg text-slate leading-relaxed">
+            A fractional CFO gives you executive-level financial leadership on a flexible, part-time basis. You get the decision support, financial modeling, and strategic thinking of a full-time CFO without the full-time overhead.
+          </p>
+          <p class="mt-4 text-lg text-slate leading-relaxed">
+            A fractional CFO looks forward to help you plan, forecast, and make better decisions with your money so you can focus on growth and profitability.
+          </p>
+        </div>
+        <div class="mt-10 sm:mt-0 sm:w-1/2">
+          <img
+            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80"
+            alt="Financial strategy session"
+            class="rounded-2xl w-full h-64 sm:h-80 object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
     <!-- Services -->
-    <section id="services" class="py-20 sm:py-28 border-t border-charcoal/5">
+    <section id="services" class="py-20 sm:py-28 bg-white">
       <div class="max-w-5xl mx-auto px-6">
         <h2 class="font-serif text-3xl sm:text-4xl font-semibold tracking-tight">How we work together</h2>
         <div class="mt-12 grid gap-8 sm:grid-cols-3">
 
-          <div class="bg-white rounded-2xl p-8 border border-charcoal/5">
+          <div class="bg-paper rounded-2xl p-8 border border-charcoal/5">
             <p class="text-xs font-semibold tracking-widest uppercase text-forest">Phase 1</p>
             <h3 class="mt-3 font-serif text-xl font-semibold">Diagnostic</h3>
-            <p class="mt-3 text-sm text-slate leading-relaxed">
-              3&ndash;6 week intensive financial deep-dive. We assess your current financial infrastructure, model health, and reporting gaps to build a clear roadmap.
+            <p class="mt-3 text-slate leading-relaxed">
+              A 3&ndash;6 week intensive that replaces uncertainty with a clear picture. We assess your financial infrastructure, model health, and reporting gaps&nbsp;&mdash; so you stop guessing where you stand and start knowing.
             </p>
-            <a href="#contact" class="inline-block mt-5 text-sm font-medium text-forest hover:underline">Inquire &rarr;</a>
+            <a href="#contact" class="inline-block mt-5 font-medium text-forest hover:underline">Inquire &rarr;</a>
           </div>
 
-          <div class="bg-white rounded-2xl p-8 border border-charcoal/5">
+          <div class="bg-paper rounded-2xl p-8 border border-charcoal/5">
             <p class="text-xs font-semibold tracking-widest uppercase text-forest">Tier 1</p>
             <h3 class="mt-3 font-serif text-xl font-semibold">Performance &amp; Oversight</h3>
-            <p class="mt-3 text-sm text-slate leading-relaxed">
-              Ongoing financial reporting, KPI dashboards, and monthly performance reviews. The financial rhythm your business needs.
+            <p class="mt-3 text-slate leading-relaxed">
+              No more waiting until month-end to discover problems. Ongoing financial reporting, KPI dashboards, and monthly performance reviews that keep you in control. Includes 24/7 Slack access.
             </p>
-            <a href="#contact" class="inline-block mt-5 text-sm font-medium text-forest hover:underline">Inquire &rarr;</a>
+            <a href="#contact" class="inline-block mt-5 font-medium text-forest hover:underline">Inquire &rarr;</a>
           </div>
 
-          <div class="bg-white rounded-2xl p-8 border border-charcoal/5">
+          <div class="bg-paper rounded-2xl p-8 border border-charcoal/5">
             <p class="text-xs font-semibold tracking-widest uppercase text-forest">Tier 2</p>
             <h3 class="mt-3 font-serif text-xl font-semibold">Growth &amp; Forecasting</h3>
-            <p class="mt-3 text-sm text-slate leading-relaxed">
-              Forward-looking financial modeling, scenario planning, fundraising support, and strategic decision frameworks.
+            <p class="mt-3 text-slate leading-relaxed">
+              Stop making big bets in the dark. Forward-looking financial modeling, scenario planning, fundraising support, and the strategic decision frameworks that turn growth from stressful to intentional. Includes 24/7 Slack access.
             </p>
-            <a href="#contact" class="inline-block mt-5 text-sm font-medium text-forest hover:underline">Inquire &rarr;</a>
+            <a href="#contact" class="inline-block mt-5 font-medium text-forest hover:underline">Inquire &rarr;</a>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- Not Accounting Disclaimer -->
-    <section class="py-16 sm:py-20 bg-charcoal text-paper">
-      <div class="max-w-5xl mx-auto px-6 max-w-2xl text-center">
-        <h2 class="font-serif text-3xl sm:text-4xl font-semibold tracking-tight">We're not your accountant.</h2>
-        <p class="mt-5 text-base sm:text-lg text-paper/70 leading-relaxed">
-          We provide CFO-level strategy and FP&amp;A&nbsp;&mdash; not bookkeeping, tax prep, or compliance. We work alongside your existing accounting team to add the strategic layer they don't cover.
-        </p>
+    <!-- How It Works (Process) -->
+    <section class="py-20 sm:py-28 bg-paper">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="font-serif text-3xl sm:text-4xl font-semibold tracking-tight text-center">Getting started is simple.</h2>
+        <div class="mt-14 grid gap-10 sm:grid-cols-3 text-center">
+          <div>
+            <div class="mx-auto w-12 h-12 rounded-full bg-forest text-paper flex items-center justify-center font-serif text-xl font-semibold">1</div>
+            <h3 class="mt-5 font-serif text-lg font-semibold">Tell Us What's Going On</h3>
+            <p class="mt-3 text-slate leading-relaxed">Book a free intro call. We'll talk about your business, what decisions are on the table, and where the financial blind spots are.</p>
+          </div>
+          <div>
+            <div class="mx-auto w-12 h-12 rounded-full bg-forest text-paper flex items-center justify-center font-serif text-xl font-semibold">2</div>
+            <h3 class="mt-5 font-serif text-lg font-semibold">Get the Full Picture</h3>
+            <p class="mt-3 text-slate leading-relaxed">We dig into your financials, find the gaps, and build a roadmap&nbsp;&mdash; so you finally know exactly where you stand and what to do about it.</p>
+          </div>
+          <div>
+            <div class="mx-auto w-12 h-12 rounded-full bg-forest text-paper flex items-center justify-center font-serif text-xl font-semibold">3</div>
+            <h3 class="mt-5 font-serif text-lg font-semibold">Grow Without the Guesswork</h3>
+            <p class="mt-3 text-slate leading-relaxed">Move into an ongoing engagement with clear reporting, forecasts, and a strategic partner you can reach anytime on Slack. Uncertainty out, confidence in.</p>
+          </div>
+        </div>
+        <div class="mt-12 text-center">
+          <a href="#contact" class="inline-block bg-forest text-paper font-medium rounded-full px-8 py-3.5 hover:bg-forest/90 transition-colors">
+            Schedule Your Free Call
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Strategy, Not Bookkeeping -->
+    <section class="py-20 sm:py-28 bg-charcoal text-paper">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2 class="font-serif text-3xl sm:text-4xl font-semibold tracking-tight">Your accountant looks back. We look forward.</h2>
+          <p class="mt-6 text-lg text-paper/70 leading-relaxed">
+            Great bookkeeping tells you where you've been. But knowing what happened last quarter doesn't help you decide what to do next quarter. We pick up where your accounting team ends&nbsp;&mdash; building forecasts, modeling scenarios, and giving you the financial strategy to make confident decisions instead of anxious ones.
+          </p>
+        </div>
+        <div class="mt-14 grid gap-8 sm:grid-cols-3 max-w-3xl mx-auto text-center">
+          <div>
+            <p class="text-3xl font-serif font-semibold text-forest">24/7</p>
+            <p class="mt-2 text-paper/60">Slack access to your CFO</p>
+          </div>
+          <div>
+            <p class="text-3xl font-serif font-semibold text-forest">FP&amp;A</p>
+            <p class="mt-2 text-paper/60">Forward-looking financial modeling</p>
+          </div>
+          <div>
+            <p class="text-3xl font-serif font-semibold text-forest">Strategic</p>
+            <p class="mt-2 text-paper/60">Decision frameworks, not just reports</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- About -->
-    <section id="about" class="py-20 sm:py-28 border-t border-charcoal/5">
-      <div class="max-w-5xl mx-auto px-6">
+    <section id="about" class="relative py-20 sm:py-28 bg-paper-warm overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1920&q=80"
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover opacity-[0.07] pointer-events-none select-none"
+        aria-hidden="true"
+      />
+      <div class="max-w-5xl mx-auto px-6 relative">
         <h2 class="font-serif text-3xl sm:text-4xl font-semibold tracking-tight">About</h2>
-        <blockquote class="mt-8 max-w-2xl text-base sm:text-lg text-slate leading-relaxed">
-          &ldquo;I've spent my career in the financial trenches&nbsp;&mdash; leading FP&amp;A functions, building financial models, and advising on the operational finance decisions that shape a business. Ridgeline CFO exists because too many growing companies have solid books but no one turning those numbers into strategy. I'm here to be that layer.&rdquo;
-        </blockquote>
-        <p class="mt-4 font-medium text-charcoal">Nicholas Charles</p>
-        <p class="text-sm text-slate">Founder, Ridgeline CFO</p>
+        <div class="mt-8 sm:flex sm:gap-12 sm:items-start">
+          <img
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&h=400&q=80"
+            alt="Nicholas Charles"
+            class="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl object-cover mb-6 sm:mb-0 sm:shrink-0"
+          />
+          <div>
+            <blockquote class="max-w-2xl text-lg sm:text-xl text-slate leading-relaxed">
+              &ldquo;I spent my career leading FP&amp;A functions and advising decision-makers on the operational and financial decisions that shape a business. But I'm also a builder. I started Ridgeline CFO because I saw too many companies with solid revenue and clean books, but no one helping them figure out what to do next. The finance seat is either empty or filled by someone who wasn't built for strategy.&rdquo;
+            </blockquote>
+            <p class="mt-5 text-lg sm:text-xl text-slate leading-relaxed max-w-2xl">
+              I'm here to fill that gap by providing the strategic layer you need to scale profitably.
+            </p>
+            <p class="mt-4 font-medium text-charcoal">Nick Charles</p>
+            <p class="text-slate">Founder, Ridgeline CFO</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="py-20 sm:py-28 border-t border-charcoal/5">
+    <!-- FAQ (Accordion) -->
+    <section id="faq" class="py-20 sm:py-28 bg-white">
       <div class="max-w-5xl mx-auto px-6">
         <h2 class="font-serif text-3xl sm:text-4xl font-semibold tracking-tight">Frequently asked questions</h2>
-        <dl class="mt-12 max-w-2xl space-y-10">
+        <div class="mt-12 max-w-2xl divide-y divide-charcoal/10">
 
-          <div>
-            <dt class="font-medium text-charcoal">How much does this cost?</dt>
-            <dd class="mt-2 text-sm text-slate leading-relaxed">
-              Engagement pricing depends on scope and complexity. Book an intro call and we'll scope it together.
-            </dd>
-          </div>
+          <details class="group py-5">
+            <summary class="flex cursor-pointer items-center justify-between text-lg font-medium text-charcoal">
+              How much does this cost?
+              <svg class="w-5 h-5 shrink-0 text-slate transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+            </summary>
+            <p class="mt-3 text-slate leading-relaxed pr-8">
+              We get it&nbsp;&mdash; you've been burned by vague pricing before. Engagement cost depends on scope and complexity, and every business is different. We'll scope it together on a free intro call so there are no surprises. Most clients find the cost is a fraction of the full-time CFO they can't justify yet.
+            </p>
+          </details>
 
-          <div>
-            <dt class="font-medium text-charcoal">Do you replace my accountant?</dt>
-            <dd class="mt-2 text-sm text-slate leading-relaxed">
-              No. We work alongside your accounting team to add the strategic layer.
-            </dd>
-          </div>
+          <details class="group py-5">
+            <summary class="flex cursor-pointer items-center justify-between text-lg font-medium text-charcoal">
+              Do you replace my accountant?
+              <svg class="w-5 h-5 shrink-0 text-slate transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+            </summary>
+            <p class="mt-3 text-slate leading-relaxed pr-8">
+              No&nbsp;&mdash; and that's exactly the point. Your accountant handles what already happened. We handle what happens next. We sit on top of their work and turn it into strategy, forecasts, and decision frameworks. If your financial statements currently feel like a foreign language, we're the translator.
+            </p>
+          </details>
 
-          <div>
-            <dt class="font-medium text-charcoal">What size companies do you work with?</dt>
-            <dd class="mt-2 text-sm text-slate leading-relaxed">
-              Growth-stage businesses that have outgrown basic bookkeeping but aren't ready for a full-time CFO.
-            </dd>
-          </div>
+          <details class="group py-5">
+            <summary class="flex cursor-pointer items-center justify-between text-lg font-medium text-charcoal">
+              What size companies do you work with?
+              <svg class="w-5 h-5 shrink-0 text-slate transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+            </summary>
+            <p class="mt-3 text-slate leading-relaxed pr-8">
+              Businesses where growth has outpaced the financial infrastructure. You're generating real revenue, making real decisions, and feeling the weight of both&nbsp;&mdash; but a $250K+ full-time CFO doesn't make sense yet. If uncertainty feels like a constant companion when it comes to your finances, we're built for you.
+            </p>
+          </details>
 
-          <div>
-            <dt class="font-medium text-charcoal">What does a typical engagement look like?</dt>
-            <dd class="mt-2 text-sm text-slate leading-relaxed">
-              Most clients start with the Diagnostic phase, then move into an ongoing tier based on their needs.
-            </dd>
-          </div>
+          <details class="group py-5">
+            <summary class="flex cursor-pointer items-center justify-between text-lg font-medium text-charcoal">
+              What does a typical engagement look like?
+              <svg class="w-5 h-5 shrink-0 text-slate transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+            </summary>
+            <p class="mt-3 text-slate leading-relaxed pr-8">
+              Most clients start with the Diagnostic phase&nbsp;&mdash; a focused deep-dive into your financial infrastructure. From there, we move into an ongoing tier (Performance &amp; Oversight or Growth &amp; Forecasting) based on what your business actually needs.
+            </p>
+          </details>
 
-        </dl>
+          <details class="group py-5">
+            <summary class="flex cursor-pointer items-center justify-between text-lg font-medium text-charcoal">
+              How is this different from hiring a consultant?
+              <svg class="w-5 h-5 shrink-0 text-slate transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+            </summary>
+            <p class="mt-3 text-slate leading-relaxed pr-8">
+              Consultants drop in, deliver a report, and leave&nbsp;&mdash; and you're back to figuring it out alone. We embed as an ongoing part of your team with 24/7 Slack access, attending your meetings, building your models, and helping you make decisions in real time. When a big question lands on your desk at 9 PM, you have someone to call.
+            </p>
+          </details>
+
+        </div>
       </div>
     </section>
 
     <!-- Calendly / Contact -->
-    <section id="contact" class="py-20 sm:py-28 border-t border-charcoal/5">
+    <section id="contact" class="py-20 sm:py-28 bg-forest-light">
       <div class="max-w-5xl mx-auto px-6">
-        <h2 class="font-serif text-3xl sm:text-4xl font-semibold tracking-tight text-center">Let's talk.</h2>
-        <p class="mt-4 text-center text-slate">Book a free intro call and we'll figure out if there's a fit.</p>
-        <div id="calendly-embed" class="mt-10 min-h-[660px]"></div>
+        <h2 class="font-serif text-3xl sm:text-4xl font-semibold tracking-tight text-center">Ready to stop guessing?</h2>
+        <p class="mt-4 text-center text-lg text-slate max-w-xl mx-auto">Book a free intro call. We'll talk about what's keeping you up at night financially and whether we're the right fit to fix it.</p>
+        <div id="calendly-embed" class="mt-10 rounded-2xl overflow-hidden bg-white" style="min-height: 900px;"></div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-charcoal/5 py-8">
+    <footer class="border-t border-charcoal/5 bg-paper py-8">
       <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate">
         <p>&copy; 2026 Ridgeline CFO</p>
         <div class="flex gap-6">

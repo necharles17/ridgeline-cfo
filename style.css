@@ -2,11 +2,30 @@
 
 @theme {
   --color-paper: #F9F7F2;
+  --color-paper-warm: #F0EDE5;
   --color-charcoal: #1A1A1A;
-  --color-slate: #64748B;
+  --color-slate: #4A4A56;
   --color-forest: #2D5F3F;
+  --color-forest-light: #E8F0EB;
   --font-serif: "Newsreader", serif;
   --font-sans: "Inter", sans-serif;
+}
+
+#calendly-embed {
+  min-height: 900px;
+}
+
+#calendly-embed iframe {
+  min-height: 900px !important;
+  height: 900px !important;
+}
+
+details summary {
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
 }
 
 html {
@@ -15,6 +34,8 @@ html {
 
 body {
   font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.7;
   color: var(--color-charcoal);
   background-color: var(--color-paper);
 }
