@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #F9F7F2;
+  --color-charcoal: #1A1A1A;
+  --color-slate: #64748B;
+  --color-forest: #2D5F3F;
+  --font-serif: "Newsreader", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-charcoal);
+  background-color: var(--color-paper);
+}
