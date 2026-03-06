@@ -23,12 +23,16 @@
 - Hero CTA is white with dark text (stands out against dark hero overlay)
 
 ## Project Structure
-- `index.html` — single-page site
-- `style.css` — Tailwind theme config and custom styles
-- `main.js` — main JS (mobile menu, interactions)
-- `calendly.js` — Calendly embed integration
-- `dist/` — Vite build output
-- `public/` — static assets (logo, favicons)
+All website files live under the `Website/` subfolder (Vercel root directory set to `Website`):
+- `Website/index.html` — single-page site
+- `Website/style.css` — Tailwind theme config and custom styles
+- `Website/main.js` — main JS (mobile menu, interactions)
+- `Website/calendly.js` — Calendly embed integration
+- `Website/dist/` — Vite build output
+- `Website/public/` — static assets (logo, favicons)
+
+Other root-level folders:
+- `Brand_Kit_Assets_v4/` — logo PNG/JPG exports
 
 ## Design Preferences
 - Keep accent colors to two roles: blue for actions, orange for visual pops
