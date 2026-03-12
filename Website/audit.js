@@ -561,14 +561,12 @@ async function handleFormSubmit(e) {
   state.score = score
   state.leadInfo = { firstName, lastName, email, company }
 
-  // Build answers payload
-  const answers = {}
-  state.selectedAudit.questions.forEach((q, i) => {
+  // Build compact answers string
+  const answersText = state.selectedAudit.questions.map((q, i) => {
     const a = state.answers[i]
-    if (a !== undefined) {
-      answers[`Q${i + 1}: ${q.text}`] = q.options[a.optionIndex].label
-    }
-  })
+    const selected = a !== undefined ? q.options[a.optionIndex].label : 'No answer'
+    return `Q${i + 1}: ${selected}`
+  }).join('\n')
 
   // Send lead notification (non-blocking, results show regardless)
   try {
@@ -582,7 +580,7 @@ async function handleFormSubmit(e) {
         audit: state.selectedAudit.category,
         score: `${score.pct}/100`,
         grade: score.grade,
-        ...answers,
+        answers: answersText,
       }),
     })
   } catch (_) {
