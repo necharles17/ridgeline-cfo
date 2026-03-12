@@ -103,19 +103,19 @@ const AUDITS = [
       {
         text: 'What is your approximate annual revenue?',
         options: [
-          { label: 'Under $2M', points: 1 },
-          { label: '$2M–$10M', points: 2 },
-          { label: '$10M–$30M', points: 3 },
-          { label: '$30M+', points: 3 },
+          { label: 'Under $1M', points: 0 },
+          { label: '$1M–$5M', points: 1 },
+          { label: '$5M–$20M', points: 2 },
+          { label: '$20M+', points: 3 },
         ],
       },
       {
         text: 'How many full-time employees do you have?',
         options: [
-          { label: 'Fewer than 10', points: 0 },
-          { label: '10–25', points: 1 },
-          { label: '25–75', points: 2 },
-          { label: '75+', points: 3 },
+          { label: 'Fewer than 5', points: 0 },
+          { label: '5–15', points: 1 },
+          { label: '15–35', points: 2 },
+          { label: '35+', points: 3 },
         ],
       },
       {
