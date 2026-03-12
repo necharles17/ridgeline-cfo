@@ -561,6 +561,15 @@ async function handleFormSubmit(e) {
   state.score = score
   state.leadInfo = { firstName, lastName, email, company }
 
+  // Build answers payload
+  const answers = {}
+  state.selectedAudit.questions.forEach((q, i) => {
+    const a = state.answers[i]
+    if (a !== undefined) {
+      answers[`Q${i + 1}: ${q.text}`] = q.options[a.optionIndex].label
+    }
+  })
+
   // Send lead notification (non-blocking, results show regardless)
   try {
     await fetch('https://formspree.io/f/xqeybbgz', {
@@ -573,6 +582,7 @@ async function handleFormSubmit(e) {
         audit: state.selectedAudit.category,
         score: `${score.pct}/100`,
         grade: score.grade,
+        ...answers,
       }),
     })
   } catch (_) {
