@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Diagnostic Tools — Ridgeline CFO</title>
+    <meta name="description" content="Free financial diagnostic audits for growth-stage businesses. See how you score on financial health, CFO readiness, and hidden blind spots." />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Free Financial Audit | Ridgeline CFO" />
+    <meta property="og:description" content="Answer 7 questions and get a scored assessment of your financial health, CFO readiness, or hidden blind spots." />
+    <meta property="og:image" content="https://ridgelinecfo.io/og-image.png" />
+    <meta property="og:url" content="https://ridgelinecfo.io/audit" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://ridgelinecfo.io/og-image.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  </head>
+  <body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 inset-x-0 z-50 bg-paper/90 backdrop-blur-sm border-b border-charcoal/5">
+      <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="/" class="flex items-center">
+          <img src="/logo-transparent.png" alt="Ridgeline CFO" class="h-12" />
+        </a>
+        <div class="hidden sm:flex items-center gap-7">
+          <a href="/#services" class="text-sm font-medium text-charcoal/70 hover:text-charcoal transition-colors">Services</a>
+          <a href="/#about" class="text-sm font-medium text-charcoal/70 hover:text-charcoal transition-colors">About</a>
+          <a href="/#contact" class="text-sm font-medium bg-steel text-white rounded-full px-5 py-2 hover:bg-steel/85 transition-colors">
+            Let's Talk
+          </a>
+        </div>
+        <button id="menu-btn" class="sm:hidden p-2 -mr-2" aria-expanded="false" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden sm:hidden border-t border-charcoal/5 bg-paper px-6 pb-4">
+        <a href="/#services" class="block py-3 font-medium text-charcoal/70 hover:text-charcoal">Services</a>
+        <a href="/#about" class="block py-3 font-medium text-charcoal/70 hover:text-charcoal">About</a>
+        <a href="/audit" class="block py-3 font-medium text-charcoal/70 hover:text-charcoal">Free Audit</a>
+        <a href="/#faq" class="block py-3 font-medium text-charcoal/70 hover:text-charcoal">FAQ</a>
+        <a href="/#contact" class="block py-3 font-medium text-forest">Let's Talk</a>
+      </div>
+    </nav>
+
+    <!-- App container — JS renders views here -->
+    <main id="app" class="pt-16"></main>
+
+    <!-- Footer -->
+    <footer class="border-t border-charcoal/5 bg-paper py-8">
+      <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate">
+        <p>&copy; 2026 Ridgeline CFO</p>
+        <div class="flex gap-6">
+          <a href="/#services" class="hover:text-charcoal transition-colors">Services</a>
+          <a href="/#about" class="hover:text-charcoal transition-colors">About</a>
+          <a href="/#contact" class="hover:text-charcoal transition-colors">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/audit.js"></script>
+  </body>
+</html>
