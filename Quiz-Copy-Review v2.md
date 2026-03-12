@@ -87,16 +87,16 @@ Pick an audit, answer 7 questions, and get a scored assessment with specific fin
 ## AUDIT 2: CFO READINESS SCORE
 
 **Q1:** What is your approximate annual revenue?
-- Under $2M (1 pt)
-- $2M–$10M (2 pts)
-- $10M–$30M (3 pts)
-- $30M+ (3 pts)
+- Under $1M (0 pts)
+- $1M–$5M (1 pt)
+- $5M–$20M (2 pts)
+- $20M+ (3 pts)
 
 **Q2:** How many full-time employees do you have?
-- Fewer than 10 (0 pts)
-- 10–25 (1 pt)
-- 25–75 (2 pts)
-- 75+ (3 pts)
+- Fewer than 5 (0 pts)
+- 5–15 (1 pt)
+- 15–35 (2 pts)
+- 35+ (3 pts)
 
 **Q3:** What does your current finance support look like in-house?
 - Nothing, owner handles finances (3 pts)
